@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { FallbackContext, FallbackType } from './FabllbackProvider';
+import * as React from "react";
+import { FallbackContext, FallbackType } from "./FabllbackProvider";
 
 export const usePage = () => {
   const { updateFallback } = React.useContext(FallbackContext);

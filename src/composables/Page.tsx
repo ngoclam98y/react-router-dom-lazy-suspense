@@ -1,6 +1,5 @@
-import * as React from 'react';
-import { endLoading, startLoading } from '../services/nprogress';
-import { usePage } from './usePage';
+import * as React from "react";
+import { usePage } from "./usePage";
 
 interface PageProps {}
 
@@ -15,10 +14,10 @@ const Page: React.FC<PageProps> = ({ children }) => {
     onLoad(render);
   }, [onLoad, render]);
 
-  React.useEffect(() => {
-    endLoading();
-    return () => startLoading();
-  }, []);
+  // React.useEffect(() => {
+  //   endLoading();
+  //   return () => startLoading();
+  // }, []);
 
   return render;
 };

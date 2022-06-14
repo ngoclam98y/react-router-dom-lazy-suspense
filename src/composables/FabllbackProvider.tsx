@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export type FallbackType = NonNullable<React.ReactNode> | null;
 
@@ -7,7 +7,7 @@ export interface FallbackContextType {
 }
 
 export const FallbackContext = React.createContext<FallbackContextType>({
-  updateFallback: () => {},
+  updateFallback: () => null,
 });
 
 interface FabllbackProviderProps {}

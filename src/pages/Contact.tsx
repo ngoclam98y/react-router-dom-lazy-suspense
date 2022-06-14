@@ -1,8 +1,7 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import { ModalContext } from '../composables/ModalProvider';
-import Page from '../composables/Page';
-import { useLocation } from 'react-router-dom';
+import * as React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { ModalContext } from "../composables/ModalProvider";
+import Page from "../composables/Page";
 
 interface ContactProps {}
 
